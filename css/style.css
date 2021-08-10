@@ -15,7 +15,7 @@ header {
     text-align: center;
 }
 .logo {
-    background-color: rgb(24, 49, 66);
+    background-color: rgb(95, 97, 89);
     padding: 5px;
     color: white;
 }
@@ -38,7 +38,8 @@ form {
     border-radius: 8px;
 }
 .contact-form input:focus,
-textarea:focus {   /* Transition for exceeds */
+textarea:focus,
+.contact-form select:focus {   /* Transition for exceeds */
     transition: background-color 2s;
     background-color: rgb(218, 218, 177);
   }
@@ -47,7 +48,8 @@ fieldset:nth-of-type(1) {
     border-bottom-style: solid;
 }
 input[type="text"]::placeholder,
-input[type="email"]::placeholder {
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder {
     text-align: right;
 }
 input[type="text"],
@@ -74,6 +76,9 @@ select {
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
+}
+.contact-form #zip {
+    height: auto;
 }
 #zip {
     width: 50%;
@@ -109,10 +114,11 @@ input, textarea {
 input:focus, textarea:focus {
     outline: 3px solid #09f;
 }
-select {
+select#state {
     padding: 6px;
-    height: 32px;
     border-radius: 2px;
+    height: 48px;
+    margin-bottom: 30px;
 }
 input[type="radio"],
 input[type="checkbox"] {
@@ -140,7 +146,7 @@ button {
     border-radius: 8px;
     display: block;
     cursor: pointer;
-    background-color: teal;
+    background-color: rgb(125, 231, 231);
 }
 
 footer,
